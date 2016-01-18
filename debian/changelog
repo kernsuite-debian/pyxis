@@ -1,0 +1,65 @@
+pyxis (1.4.4-1trusty) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 18 Jan 2016 11:49:49 +0200
+
+pyxis (1.4.3-0trusty) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 18 Jan 2016 11:33:49 +0200
+
+pyxis (1.4.1-2trusty) trusty; urgency=medium
+
+  * switch from pyrap to python-casacore
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 01 Sep 2015 11:33:02 +0200
+
+pyxis (1.4.1-1trusty) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 02 Mar 2015 11:27:56 +0200
+
+pyxis (1.4.0-1trusty) trusty; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 10 Feb 2015 13:48:44 +0200
+
+pyxis (1.3.0-2trusty) trusty; urgency=medium
+
+  * upload to new PPA
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 26 Jan 2015 14:32:38 +0200
+
+pyxis (1.3.0-1trusty) trusty; urgency=low
+
+  * build for trusty
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 04 Apr 2014 14:21:11 +0200
+
+pyxis (1.3.0-4precise1) precise; urgency=low
+
+  * fix dependency 
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 15:12:07 +0200
+
+pyxis (1.3.0-3precise1) precise; urgency=low
+
+  * pyrap is renamed to python-pyrap
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 14:52:00 +0200
+
+pyxis (1.3.0-2precise1) precise; urgency=low
+
+  * rename python package to python-pyxis
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 14:35:18 +0200
+
+pyxis (1.3.0-1precise1) precise; urgency=low
+
+  * Initial release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 28 Jan 2014 14:35:59 +0200

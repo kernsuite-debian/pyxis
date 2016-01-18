@@ -1,0 +1,12 @@
+These are the debian package files for Pyxis:
+
+https://github.com/ska-sa/pyxis/
+
+The packages are uploaded the the SKA Ubuntu PPA repository:
+
+https://launchpad.net/~ska-sa/
+
+
+packaging related issues should be reported here
+
+https://github.com/radio-astro/packaging

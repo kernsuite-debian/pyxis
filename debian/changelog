@@ -1,3 +1,9 @@
+pyxis (1.5.1-1) xenial; urgency=medium
+
+  * new upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Fri, 10 Mar 2017 14:58:11 +0200
+
 pyxis (1.4.4-1kern1) xenial; urgency=medium
 
   * first kern release

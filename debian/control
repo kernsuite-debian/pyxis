@@ -3,7 +3,7 @@ Section: python
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), python-all
-Standards-Version: 3.9.2
+Standards-Version: 3.9.7
 Homepage: https://github.com/ska-sa/pyxis
 X-Python-Version: 2.7
 
@@ -12,6 +12,19 @@ Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}, python-pyfits, python-matplotlib,
  python-casacore, python-numpy, python-meqtrees-timba
 Description: Python Extensions for Interferometry Scripting
+ Pyxis is a set of Python-based scripting services that is meant to simplify
+ the process of making data reduction and simulation scripts, using MeqTrees
+ and other diverse bits of software.
+ .
+ Pyxis scripts are essentially Python scripts, with extra convenience features
+ provided by the Pyxis framework. Pyxis borrows interface ideas from, among
+ others, the Perl language, casapy, pybdsm, etc. Pyxis scripts can be run from
+ the command line, or interactively via ipython.
+ 
+Package: pyxis
+Architecture: any
+Depends: ${misc:Depends}, python-pyxis
+Description: meta package for Python Extensions for Interferometry Scripting
  Pyxis is a set of Python-based scripting services that is meant to simplify
  the process of making data reduction and simulation scripts, using MeqTrees
  and other diverse bits of software.

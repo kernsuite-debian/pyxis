@@ -1,3 +1,9 @@
+pyxis (1.5.1-1kern2) xenial; urgency=medium
+
+  * fix missing files issues
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 15 Mar 2018 15:21:25 +0200
+
 pyxis (1.5.1-1kern1) xenial; urgency=medium
 
   * update signature

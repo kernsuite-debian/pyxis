@@ -1,5 +1,8 @@
 build/
+debian/
 *.pyc
 MANIFEST
 dist/
+.venv*/
+pyxis.log
 

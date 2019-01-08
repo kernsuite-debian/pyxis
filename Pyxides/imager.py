@@ -1,5 +1,3 @@
-import ms  
-import im 
 import im.argo
 
 from Pyxis.ModSupport import *

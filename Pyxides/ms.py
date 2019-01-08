@@ -1,9 +1,8 @@
 """Pyxis module for MS-related operations""";
-import math
 import pyrap.tables
 from pyrap.tables import table
 import os.path
-import pyfits
+from astropy.io import fits as pyfits
 import numpy as np
 
 from Pyxis.ModSupport import *
@@ -159,7 +158,7 @@ def copycol (fromcol="DATA",tocol="CORRECTED_DATA",rowchunk=500000,msname="$MS",
   """;
   msname,destms,fromcol,tocol = interpolate_locals("msname to_ms fromcol tocol");
   if ddid is None:
-    ddids = range(ms(msname,subtable="DATA_DESCRIPTION").nrows());
+    ddids = list(range(ms(msname,subtable="DATA_DESCRIPTION").nrows()));
     info("copying $msname $fromcol to $destms $tocol");
     info("$msname has %d DDIDs"%len(ddids));
     to_ddid = None;
@@ -190,7 +189,7 @@ def sumcols (fromcol1="DATA",fromcol2="MODEL_DATA",tocol="CORRECTED_DATA",rowchu
   """;
   msname,destms,fromcol1,fromcol2,tocol = interpolate_locals("msname to_ms fromcol1 fromcol2 tocol");
   if ddid is None:
-      ddids = range(ms(msname,subtable="DATA_DESCRIPTION").nrows());
+      ddids = list(range(ms(msname,subtable="DATA_DESCRIPTION").nrows()));
       info("copying $msname $fromcol1+$fromcol2 to $destms $tocol");
       info("$msname has %d DDIDs"%len(ddids));
       to_ddid = None;

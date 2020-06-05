@@ -1,3 +1,9 @@
+pyxis (1.7.0-1kern1) bionic; urgency=medium
+
+  * New upstream version 1.7.0
+
+ -- KERN packaging <packaging@kernsuite.info>  Fri, 05 Jun 2020 16:09:29 +0200
+
 pyxis (1.6.1-1) bionic; urgency=medium
 
   [ Gijs Molenaar ]

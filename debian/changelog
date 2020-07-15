@@ -1,3 +1,10 @@
+pyxis (1.7.1-1kern1) bionic; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream version 1.7.1
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 15 Jul 2020 16:56:13 +0200
+
 pyxis (1.7.0-1kern1) bionic; urgency=medium
 
   * New upstream version 1.7.0

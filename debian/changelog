@@ -1,3 +1,11 @@
+pyxis (1.7.1-1kern2) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * Build for KERN-7 (focal)
+  * Drop py2 support
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 06 Oct 2020 15:44:24 +0000
+
 pyxis (1.7.1-1kern1) bionic; urgency=medium
 
   [ Athanaseus Javas Ramaila ]

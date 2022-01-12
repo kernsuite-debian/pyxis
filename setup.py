@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 from distutils.core import setup
@@ -28,9 +28,9 @@ def readme():
       return f.read()
 
 setup(name='astro-pyxis',
-      version='1.7.0',
+      version='1.7.4.3',
+      python_requires='>=3.0.0',
       description='Python Extensions for astronomical Interferometry Scripting',
-      long_description = readme(),
       author='Oleg Smirnov',
       author_email='Oleg Smirnov <osmirnov@gmail.com>',
       url='https://github.com/ska-sa/pyxis',

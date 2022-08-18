@@ -1,0 +1,78 @@
+diff --git a/Pyxides/im/__init__.py b/Pyxides/im/__init__.py
+index c0e218d..8d33668 100644
+--- a/Pyxides/im/__init__.py
++++ b/Pyxides/im/__init__.py
+@@ -55,10 +55,10 @@ flux_rescale=1
+ velocity = False 
+ no_weight_fov = False
+ 
+-# import wsclean
+-# import lwimager
+-# import casa
+-# import moresane
++from . import wsclean
++from . import lwimager
++from . import casa
++from . import moresane
+ 
+ def make_image (*args,**kw):
+   imager = kw.get('imager', IMAGER).lower();
+diff --git a/Pyxides/im/casa.py b/Pyxides/im/casa.py
+index 6a8a180..c81a1b2 100644
+--- a/Pyxides/im/casa.py
++++ b/Pyxides/im/casa.py
+@@ -4,7 +4,7 @@ import ms
+ import im
+ import subprocess
+ import tempfile
+-import  argo
++from . import argo
+ import pyrap.images as Images
+ 
+ # register ourselves with Pyxis and define the superglobals
+diff --git a/Pyxides/im/lwimager.py b/Pyxides/im/lwimager.py
+index b131dda..7aff346 100644
+--- a/Pyxides/im/lwimager.py
++++ b/Pyxides/im/lwimager.py
+@@ -5,7 +5,7 @@ import pyrap.images
+ import os
+ import subprocess
+ from astropy.io import fits as pyfits
+-from im import argo
++from . import argo
+ 
+ import ms
+ import std
+diff --git a/Pyxides/im/moresane.py b/Pyxides/im/moresane.py
+index 75d46f7..601079a 100644
+--- a/Pyxides/im/moresane.py
++++ b/Pyxides/im/moresane.py
+@@ -5,7 +5,7 @@ import os
+ import sys
+ import numpy
+ import math
+-import argo
++from . import argo
+ import im
+ # Standard options
+ gain = 0.1
+diff --git a/Pyxides/imager.py b/Pyxides/imager.py
+index a070326..3203012 100644
+--- a/Pyxides/imager.py
++++ b/Pyxides/imager.py
+@@ -1,4 +1,5 @@
+ from Pyxis.ModSupport import *
++from Pyxis import im
+ 
+ register_pyxis_module(superglobals="MS LSM DESTDIR");
+ v.define("LSM","lsm.lsm.html","""current local sky model""");
+@@ -89,7 +90,8 @@ restored_image residual_image model_image algorithm fullrest_image restoring_opt
+     makedir('$DESTDIR')
+     if imager in ['lwimager','wsclean']:
+         __import__('im.%s'%imager.lower());
+-        call_imager = eval( 'im.%s.make_image'%(imager.lower()) )
++        call_imager = getattr(getattr(im, imager.lower()), "make_image")
++        #call_imager = eval( 'im.%s.make_image'%(imager.lower()) )
+     else: 
+ 
+         abort('Uknown imager: $imager')

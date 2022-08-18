@@ -1,3 +1,7 @@
+From: Athanaseus Javas Ramaila  aramaila@sarao.ac.za>
+Date: Thu, 18 Aug 2022 15:01:54 +0200
+Subject: https://github.com/ratt-ru/pyxis/issues/108
+
 diff --git a/Pyxides/im/__init__.py b/Pyxides/im/__init__.py
 index c0e218d..8d33668 100644
 --- a/Pyxides/im/__init__.py

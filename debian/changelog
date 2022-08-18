@@ -1,3 +1,10 @@
+pyxis (1.7.4.3-1kern2) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * issue 108 https://github.com/ratt-ru/pyxis/pull/109/files patch
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 18 Aug 2022 12:48:11 +0000
+
 pyxis (1.7.4.3-1kern1) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]

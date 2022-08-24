@@ -1,3 +1,10 @@
+pyxis (1.7.5-1kern1) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream release 1.7.5
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 24 Aug 2022 09:17:06 +0000
+
 pyxis (1.7.4.3-1kern2) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]

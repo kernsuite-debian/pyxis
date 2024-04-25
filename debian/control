@@ -3,15 +3,15 @@ Section: python
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Uploaders: Athanaseus Javas Ramaila <aramaila@sarao.ac.za>
-Build-Depends: debhelper (>= 11~),
+Build-Depends: debhelper-compat (= 13),
  dh-python,
  python3-all,
  python3-setuptools,
  python3-numpy,
  python3-six
-Standards-Version: 4.6.1
+Standards-Version: 4.6.2.0
 Homepage: https://github.com/ska-sa/pyxis
-X-Python3-Version: >= 3.6
+X-Python3-Version: >= 3.10
 
 Package: python3-pyxis
 Architecture: any
